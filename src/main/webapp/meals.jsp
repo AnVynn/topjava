@@ -23,6 +23,7 @@
         <tbody>
         <jsp:useBean id="meals" scope="request" type="java.util.List"/>
         <c:forEach items="${meals}" var="meal">
+            <jsp:useBean id="meal" type="ru.javawebinar.topjava.model.MealTo"/>
             <tr style="color: ${meal.excess ? 'red' : 'green'}">
             <td><c:out value="${TimeUtil.getDateTime(meal.dateTime)}"/></td>
             <td><c:out value="${meal.description}"/></td>
