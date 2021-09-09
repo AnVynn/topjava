@@ -9,6 +9,8 @@ import java.io.UnsupportedEncodingException;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static ru.javawebinar.topjava.web.json.JsonUtil.writeValue;
 
 /**
  * Factory for creating test matchers.
